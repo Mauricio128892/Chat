@@ -3,14 +3,11 @@ const cors = require('cors');
 
 const app = express();
 
-// Configuración de CORS
-// La URL de origen debe ser la de tu front-end en Netlify.
-const corsOptions = {
-  origin: 'https://chatbotmvv.netlify.app',
-  optionsSuccessStatus: 200
-};
+// Configuración de CORS más permisiva
+// Esto permite que cualquier origen (dominio) pueda acceder a tu API.
+// Es una buena práctica para la depuración y para evitar problemas de CORS.
+app.use(cors());
 
-app.use(cors(corsOptions));
 app.use(express.json());
 
 // Tu ruta de API para el chat
