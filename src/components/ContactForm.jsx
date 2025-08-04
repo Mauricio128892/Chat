@@ -8,7 +8,7 @@ const ContactForm = ({ answers }) => {
 
   // Configuración de Google Calendar API (reemplaza con tus credenciales)
   const CLIENT_ID = 'TU_CLIENT_ID.apps.googleusercontent.com';
-  const API_KEY = 'TU_API_KEY';
+  const API_KEY = 'AIzaSyAPU6g5Q5fx2jP35S_LV5_pAVQVEokacUA';
   const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
   const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 
