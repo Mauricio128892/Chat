@@ -106,7 +106,7 @@ const App = () => {
     // Check if backend is ready
     const checkBackendStatus = async () => {
       try {
-        const response = await fetch('http://localhost:3001/chat', {
+        const response = await fetch('https://chat-alpha-blue.vercel.app/api/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
