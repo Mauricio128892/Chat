@@ -9,6 +9,7 @@ import { fileURLToPath } from 'url';
 
 const app = express();
 const port = 3001;
+const cors = require('cors');
 
 // Configuración de la API de Gemini
 // Se ha cambiado el modelo a gemini-2.5-flash para evitar errores de cuota.
